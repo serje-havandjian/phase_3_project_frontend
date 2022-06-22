@@ -1,23 +1,28 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react";
+import CountryCard from "./CountryCard";
 
-function Continent(){
+function Continent({ continentName }) {
 
-    const [test, setTest] = useState("")
+    const [continent, setContinent] = useState([])
 
     useEffect(()=>{
-        fetch("http://localhost:9292/destinations")
+        fetch(`http://localhost:9292/continent/${continentName}`)
         .then(res => res.json())
-        .then(res => setTest(res))
-    }, [])
+        .then(res => setContinent(res))
+    }, [continentName])
 
-    console.log(test)
-    
-    return(
+    console.log(continentName)
+
+    const renderDestinations = continent.map((a) => {
+        return <CountryCard key={a.id} destination={a.destination} countryName={a.country.country_name} continent={a.country.continent} language={a.country.language} tourist={a.tourist.name}/>
+    });
+
+    return (
         <div> 
-            <h2></h2>
-      </div>
+           {renderDestinations}
+        </div>
     )
     
 }
 
-export default Continent
+export default Continent;
