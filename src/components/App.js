@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import HomePage from "./HomePage";
 import Tourists from "./Tourists";
@@ -6,6 +6,8 @@ import NavBar from "./NavBar";
 import Continent from "./Continent";
 
 function App() {
+
+    const [ allTourists, setAllTourists ] = useState([])
 
 
   return (
@@ -16,7 +18,7 @@ function App() {
               <HomePage />
           </Route>
           <Route exact path = "/Tourists">
-              <Tourists />
+              <Tourists allTourists={allTourists} setAllTourists={setAllTourists}/>
           </Route>
           <Route exact path = "/Asia">
             <Continent continentName={"asia"}/>
