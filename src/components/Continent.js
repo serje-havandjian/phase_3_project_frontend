@@ -17,7 +17,7 @@ function Continent({ continentName }) {
     }, [continentName])
 
     const renderDestinations = continent.map((a) => {
-        return <CountryCard key={a.id} id={a.id} destination={a.destination} countryName={a.country.country_name} continent={a.country.continent} language={a.country.language} tourist={a.tourist.name} onDestDelete={handleDeleteDestination} setContinent={setContinent}/>
+        return <CountryCard key={a.id} id={a.id} destination={a.destination} geography={a.geography} rating={a.rating} countryName={a.country.country_name} continent={a.country.continent} language={a.country.language} tourist={a.tourist.name} onDestDelete={handleDeleteDestination} setContinent={setContinent}/>
     });
 
     return (
