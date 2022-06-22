@@ -7,7 +7,8 @@ import Continent from "./Continent";
 
 function App() {
 
-    const [ allTourists, setAllTourists ] = useState([])
+    const [ allTourists, setAllTourists ] = useState([]);
+    const [ allCountries, setAllCountries ] = useState([]);
 
 
   return (
@@ -18,7 +19,7 @@ function App() {
               <HomePage />
           </Route>
           <Route exact path = "/Tourists">
-              <Tourists allTourists={allTourists} setAllTourists={setAllTourists}/>
+              <Tourists allTourists={allTourists} setAllTourists={setAllTourists} allCountries={allCountries} setAllCountries={setAllCountries}/>
           </Route>
           <Route exact path = "/Asia">
             <Continent continentName={"asia"}/>
