@@ -7,7 +7,7 @@ function Continent({ continentName }) {
 
     function handleDeleteDestination(id) {
         const updatedDestinations = continent.filter((cont) => cont.id !== id);
-        setContinent(updatedDestinations)
+        setContinent(updatedDestinations);
     } 
 
     useEffect(()=>{

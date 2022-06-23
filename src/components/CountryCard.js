@@ -19,15 +19,19 @@ function CountryCard({ id, countryName, continent, language, tourist, destinatio
     }
 
     return (
-        <div>
-            <h2>Destination: {capitalizeString(destination)}</h2>
-            <p>Country: {capitalizeString(countryName)}</p>
-            <p>Continent: {capitalizeString(continent)}</p>
-            <p>Spoken language: {capitalizeString(language)}</p>
-            <p>Tourist: {capitalizeString(tourist)}</p>
-            <p>Rating: {rating}</p>
-            <p>Geography: {capitalizeString(geography)}</p>
-            <button onClick={handleRemoveDestination}>Isildur - cast it into the fire!</button>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <h2>Destination: {capitalizeString(destination)}</h2>
+                    <p>Country: {capitalizeString(countryName)}</p>
+                    <p>Continent: {capitalizeString(continent)}</p>
+                    <p>Spoken Language: {capitalizeString(language)}</p>
+                    <p>Tourist: {capitalizeString(tourist)}</p>
+                    <p>Rating: {rating}</p>
+                    <p>Geography: {capitalizeString(geography)}</p>
+                    <button id="isildur" onClick={handleRemoveDestination}>Isildur - cast it into the fire!</button>
+                </div>
+            </div>
         </div>
     )
 }

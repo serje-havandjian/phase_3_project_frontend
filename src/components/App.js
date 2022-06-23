@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
-import HomePage from "./HomePage";
 import Tourists from "./Tourists";
 import NavBar from "./NavBar";
 import Continent from "./Continent";
@@ -16,9 +15,6 @@ function App() {
       <NavBar />
         <Switch>
           <Route exact path = "/">
-              <HomePage />
-          </Route>
-          <Route exact path = "/Tourists">
               <Tourists allTourists={allTourists} setAllTourists={setAllTourists} allCountries={allCountries} setAllCountries={setAllCountries}/>
           </Route>
           <Route exact path = "/Asia">
@@ -30,8 +26,8 @@ function App() {
           <Route exact path = "/Europe">
               <Continent continentName={"europe"}/>
           </Route>
-          <Route exact path = "/Antartica">
-            <Continent continentName={"antartica"}/>
+          <Route exact path = "/Antarctica">
+            <Continent continentName={"antarctica"}/>
           </Route>
           <Route exact path = "/NorthAmerica">
             <Continent continentName={"north_america"}/>
@@ -39,8 +35,8 @@ function App() {
           <Route exact path = "/SouthAmerica">
             <Continent continentName={"south_america"}/>
           </Route>
-          <Route exact path = "/Oceania">
-            <Continent continentName={"oceania"}/>
+          <Route exact path = "/Australia">
+            <Continent continentName={"australia"}/>
           </Route>
         </Switch>
     </>

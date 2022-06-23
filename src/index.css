@@ -1,13 +1,124 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: url(https://insideclimatenews.org/wp-content/uploads/2020/09/california-fire-labor-day_josh-edelson-afp-getty.jpg);
+  font-family: 'EB Garamond', serif;
+}
+
+.image {
+  width: 1350px;
+
+}
+
+.form {
+  float: right;
+  border: 5px black solid;
+  width: 700px;
+  height: 500px;
+  margin-right: 300px;
+  background-color: rgba(255, 255, 255, 0.392);
+  text-align: center;
+  padding-top: 40px;
+  margin-top: 175px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+button {
+  color: black;
+  background-color: white;
+  font-size: large;
+  border-radius: 5px;
+  padding: 17px;
+  margin: 5px;
+  font-weight: bold;
+  cursor: pointer; 
+  border: 2px white solid;
+}
+
+.active {
+  background-color:rgb(230, 65, 28);
+}
+
+#navBar {
+  display: center;
+  margin-right: 200px;
+  list-style-type: none;
+  margin: 0;
+  padding: 50px;
+  overflow: hidden; 
+  text-align: center;
+}
+
+.submitButton {
+  background-color: white;
+  height: 38px;
+  width: 91px;
+  padding: 8px;
+  border: 1px black solid;
+}
+
+#touristButton {
+  background-color: rgb(104, 11, 11);
+  color: white;
+  padding: 10px;
+  font-size: medium;
+}
+
+label {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+input {
+  width: 187px;
+  height: 24px;
+}
+
+select {
+  width: 187px;
+  height: 30px;
+}
+
+#editTourist {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border: 2px black solid;
+  margin: 20px;
+}
+
+#isildur {
+  background-color: rgb(162, 18, 18);
+  color: white;
+  border: 2px black solid;
+}
+
+
+
+
+
+
