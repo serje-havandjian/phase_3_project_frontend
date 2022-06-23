@@ -7,18 +7,26 @@ function CountryCard({ id, countryName, continent, language, tourist, destinatio
             method: "DELETE",
         });
 
-        onDestDelete(id)
+        onDestDelete(id);
+    }
+
+    function capitalizeWord(word) {
+        return word.charAt(0).toUpperCase() + word.substring(1);
+    }
+
+    function capitalizeString(string) {
+        return string.split(' ').map((word) => capitalizeWord(word)).join(' ');
     }
 
     return (
         <div>
-            <h2>Destination: {destination}</h2>
-            <p>Country: {countryName}</p>
-            <p>Continent: {continent.charAt(0).toUpperCase() + continent.substring(1)}</p>
-            <p>Spoken language: {language}</p>
-            <p>Tourist: {tourist.charAt(0).toUpperCase() + tourist.substring(1)}</p>
+            <h2>Destination: {capitalizeString(destination)}</h2>
+            <p>Country: {capitalizeString(countryName)}</p>
+            <p>Continent: {capitalizeString(continent)}</p>
+            <p>Spoken language: {capitalizeString(language)}</p>
+            <p>Tourist: {capitalizeString(tourist)}</p>
             <p>Rating: {rating}</p>
-            <p>Geography: {geography}</p>
+            <p>Geography: {capitalizeString(geography)}</p>
             <button onClick={handleRemoveDestination}>Isildur - cast it into the fire!</button>
         </div>
     )
