@@ -44,6 +44,7 @@ function Tourists({ allTourists, setAllTourists, allCountries, setAllCountries }
     }
 
     function handleEditName(e) {
+        e.preventDefault()
         const touristObj = { id: id, name: touristToEdit }
 
         fetch(`http://localhost:9292/tourists/${id}`, {
