@@ -11,7 +11,7 @@ function Continent({ continentName }) {
     } 
 
     useEffect(()=>{
-        fetch(`http://localhost:9292/continent/${continentName}`)
+        fetch(`https://safe-springs-49026.herokuapp.com/continent/${continentName}`)
         .then(res => res.json())
         .then(res => setContinent(res))
     }, [continentName])

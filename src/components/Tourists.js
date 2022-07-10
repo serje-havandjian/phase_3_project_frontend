@@ -11,13 +11,13 @@ function Tourists({ allTourists, setAllTourists, allCountries, setAllCountries }
     const [ id, setId ] = useState();
 
     useEffect(()=>{
-        fetch(`http://localhost:9292/tourists`)
+        fetch(`https://safe-springs-49026.herokuapp.com/tourists`)
         .then(res => res.json())
         .then(res => setAllTourists(res))
     }, [])
 
     useEffect(()=>{
-        fetch(`http://localhost:9292/countries`)
+        fetch(`https://safe-springs-49026.herokuapp.com/countries`)
         .then(res => res.json())
         .then(res => setAllCountries(res))
     }, [])
@@ -47,7 +47,7 @@ function Tourists({ allTourists, setAllTourists, allCountries, setAllCountries }
         e.preventDefault()
         const touristObj = { id: id, name: touristToEdit }
 
-        fetch(`http://localhost:9292/tourists/${id}`, {
+        fetch(`https://safe-springs-49026.herokuapp.com/tourists/${id}`, {
             method: "PATCH", 
             headers: {
               "Content-Type": "application/json",
@@ -73,7 +73,7 @@ function Tourists({ allTourists, setAllTourists, allCountries, setAllCountries }
             name: newTourist
         };
 
-        fetch("http://localhost:9292/tourists", {
+        fetch("https://safe-springs-49026.herokuapp.com/tourists", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -109,7 +109,7 @@ function Tourists({ allTourists, setAllTourists, allCountries, setAllCountries }
             country_id: countryId
         };
 
-        fetch("http://localhost:9292/destinations", {
+        fetch("https://safe-springs-49026.herokuapp.com/destinations", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

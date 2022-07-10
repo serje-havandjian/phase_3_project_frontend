@@ -3,7 +3,7 @@ import React from "react";
 function CountryCard({ id, countryName, continent, language, tourist, destination, onDestDelete, rating, geography }) {
 
     function handleRemoveDestination() {
-        fetch(`http://localhost:9292/destination/${id}`, {
+        fetch(`https://safe-springs-49026.herokuapp.com/destination/${id}`, {
             method: "DELETE",
         });
 
