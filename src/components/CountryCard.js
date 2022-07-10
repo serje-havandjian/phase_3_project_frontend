@@ -22,7 +22,7 @@ function CountryCard({ id, countryName, continent, language, tourist, destinatio
         <div class="row">
             <div class="column">
                 <div class="card">
-                    <h2>Destinations: {capitalizeString(destination)}</h2>
+                    <h2>Destination: {capitalizeString(destination)}</h2>
                     <p>Country: {capitalizeString(countryName)}</p>
                     <p>Continent: {capitalizeString(continent)}</p>
                     <p>Spoken Language: {capitalizeString(language)}</p>
