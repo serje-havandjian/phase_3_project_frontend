@@ -152,7 +152,7 @@ function Tourists({ allTourists, setAllTourists, allCountries, setAllCountries }
                     <area shape="poly" coords="1110, 641, 1125, 582, 1165, 563, 1183, 548, 1216, 537, 1237, 540, 1254, 566, 1264, 537, 1315, 608, 1275, 670, 1235, 674, 1190, 639" alt="australia" href="http://localhost:3000/australia" />
                     <area shape="poly" coords="848, 149, 834, 161, 835, 158, 866, 229, 819, 231, 827, 249 813, 260, 829, 283, 760, 259, 739, 274, 723, 296, 685, 295, 663, 283, 602, 297, 586, 284, 592, 260, 591, 225, 614, 190, 722, 137, 837, 140" alt="europe" href="http://localhost:3000/europe" />
                     <area shape="poly" coords="1195, 525, 1266, 169, 854, 107, 848, 149, 834, 161, 835, 158, 866, 229, 819, 231, 827, 249 813, 260, 829, 283, 786, 267, 745, 273, 753, 297, 777, 298, 776, 327, 821, 414, 891, 360, 984, 449, 1027, 366, 1096, 512" alt="asia" href="http://localhost:3000/asia" />
-                    <area shape="poly" coords="15, 153, 610, 69, 472, 173, 272, 361, 319, 413, 254, 460" alt="north_america" href="http://localhost:3000/northamerica" />
+                    <area shape="poly" coords="15, 153, 610, 69, 472, 173, 272, 361, 319, 413, 254, 460" alt="north_america" href="https://calm-springs-08154.herokuapp.com/northamerica" />
                     <area shape="poly" coords="300, 443, 463, 528, 369, 767, 253, 522, 380, 480, 356" alt="south_america" href="http://localhost:3000/southamerica" />
                     <area shape="poly" coords="663, 293, 775, 325, 825, 425, 849, 544, 707, 649, 547, 373, 603, 296" alt="africa" href="http://localhost:3000/africa" />
                     <area shape="rect" coords="9, 813, 1353, 913" alt="antarctica" href="http://localhost:3000/antarctica" />
