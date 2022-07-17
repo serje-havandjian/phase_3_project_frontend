@@ -146,7 +146,7 @@ function Tourists({ allTourists, setAllTourists, allCountries, setAllCountries }
 
     return (
         <>
-            <h1>Travel the world while you still can....</h1>
+            <h1>Travel The World!</h1>
                 <img src="https://www.allplacesmap.com/maps/world-map-with-continents.jpg" alt="map" usemap="#worldmap" class="image"/>
                 <map name="worldmap">
                     <area shape="poly" coords="1110, 641, 1125, 582, 1165, 563, 1183, 548, 1216, 537, 1237, 540, 1254, 566, 1264, 537, 1315, 608, 1275, 670, 1235, 674, 1190, 639" alt="australia" href="https://calm-springs-08154.herokuapp.com/australia" />
@@ -160,7 +160,7 @@ function Tourists({ allTourists, setAllTourists, allCountries, setAllCountries }
             <div class="form">
                 <form onSubmit={submitNewTourist}>
                     <label>Add a new tourist:</label><br></br>
-                    <input id="touristForm" onChange={newTouristName} name="touristname" type="text" placeholder="Whisper to me your name..."></input>
+                    <input id="touristForm" onChange={newTouristName} name="touristname" type="text" placeholder="Enter tourist name"></input>
                     <button class="submitButton" type="submit">submit</button>
                 </form>
                 <form onSubmit={handleEditName} id="editTourist">
