@@ -155,7 +155,7 @@ function Tourists({ allTourists, setAllTourists, allCountries, setAllCountries }
                     <area shape="poly" coords="15, 153, 610, 69, 472, 173, 272, 361, 319, 413, 254, 460" alt="north_america" href="https://calm-springs-08154.herokuapp.com/northamerica" />
                     <area shape="poly" coords="300, 443, 463, 528, 369, 767, 253, 522, 380, 480, 356" alt="south_america" href="https://calm-springs-08154.herokuapp.com/southamerica" />
                     <area shape="poly" coords="663, 293, 775, 325, 825, 425, 849, 544, 707, 649, 547, 373, 603, 296" alt="africa" href="https://calm-springs-08154.herokuapp.com/africa" />
-                    <area shape="rect" coords="9, 813, 1353, 913" alt="antarctica" href="https://calm-springs-08154.herokuapp.com/antarctica" />
+                    <area shape="rect" coords="9, 813, 1353, 913" alt="antarctica" href="https://calm-springs-08154.herokuapp.com/antarctica"/>
                 </map>
             <div class="form">
                 <form onSubmit={submitNewTourist}>
