@@ -29,7 +29,7 @@ function CountryCard({ id, countryName, continent, language, tourist, destinatio
                     <p>Tourist: {capitalizeString(tourist)}</p>
                     <p>Rating: {rating}</p>
                     <p>Geography: {capitalizeString(geography)}</p>
-                    <button id="isildur" onClick={handleRemoveDestination}>Isildur - cast it into the fire!</button>
+                    <button id="isildur" onClick={handleRemoveDestination}>Delete</button>
                 </div>
             </div>
         </div>
