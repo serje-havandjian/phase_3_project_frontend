@@ -21,28 +21,28 @@ function NavBar() {
     return (
          <nav id="navBar">
             <NavLink to="/" exact>
-                <button onClick={handleClick} className={active === "Travel The World" ? "active" : "navbar"} value="Travel The World">Travel The World</button>
+                <button onClick={handleClick} className={active === "Travel The World" ? "active" : "button"} value="Travel The World">Travel The World</button>
             </NavLink>
             <NavLink to="/asia" exact>
-                <button onClick={handleClick} className={active === "Asia" ? "active" : "navbar"} value="Asia">Asia</button>
+                <button onClick={handleClick} className={active === "Asia" ? "active" : "button"} value="Asia">Asia</button>
             </NavLink>
             <NavLink to="/africa" exact>
-                <button onClick={handleClick} className={active === "Africa" ? "active" : "navbar"} value="Africa">Africa</button>
+                <button onClick={handleClick} className={active === "Africa" ? "active" : "button"} value="Africa">Africa</button>
             </NavLink>
             <NavLink to="/europe" exact>
-                <button onClick={handleClick} className={active === "Europe" ? "active" : "navbar"} value="Europe">Europe</button>
+                <button onClick={handleClick} className={active === "Europe" ? "active" : "button"} value="Europe">Europe</button>
             </NavLink>
             <NavLink to="/antarctica" exact>
-                <button onClick={handleClick} className={active === "Antarctica" ? "active" : "navbar"} value="Antarctica">Antarctica</button>
+                <button onClick={handleClick} className={active === "Antarctica" ? "active" : "button"} value="Antarctica">Antarctica</button>
             </NavLink>
             <NavLink to="/northamerica" exact>
-                <button onClick={handleClick} className={active === "North America" ? "active" : "navbar"} value="North America">North America</button>
+                <button onClick={handleClick} className={active === "North America" ? "active" : "button"} value="North America">North America</button>
             </NavLink>
             <NavLink to="/southamerica" exact>
-                <button onClick={handleClick} className={active === "South America" ? "active" : "navbar"} value="South America">South America</button>
+                <button onClick={handleClick} className={active === "South America" ? "active" : "button"} value="South America">South America</button>
             </NavLink>
             <NavLink to="/australia" exact>
-                <button onClick={handleClick} className={active === "Australia" ? "active" : "navbar"} value="Australia">Australia</button>
+                <button onClick={handleClick} className={active === "Australia" ? "active" : "button"} value="Australia">Australia</button>
             </NavLink>
         </nav>
     )

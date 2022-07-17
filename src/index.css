@@ -40,6 +40,10 @@ button {
   background-color:rgb(230, 65, 28);
 }
 
+.button {
+  background-color: rgba(255, 255, 255, 0.392);
+}
+
 #navBar {
   display: center;
   margin-right: 200px;
@@ -48,7 +52,6 @@ button {
   padding: 50px;
   overflow: hidden; 
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.392);
 }
 
 .submitButton {
